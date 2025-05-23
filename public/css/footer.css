@@ -1,0 +1,81 @@
+/* public/css/styles.css */
+
+/* Đảm bảo footer không che nội dung */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+    padding-bottom: 100px; /* Giảm khoảng cách dưới vì footer nhỏ hơn */
+}
+
+.footer {
+    flex-shrink: 0;
+    background-color: #007bff;
+}
+
+/* Thiết kế footer nhỏ hơn */
+.footer {
+    border-top: 3px solid #0056b3; /* Viền trên mỏng hơn */
+}
+
+.footer .container {
+    padding-top: 1.5rem; /* Giảm padding */
+    padding-bottom: 1.5rem;
+}
+
+.footer h5 {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 0.95rem; /* Giảm cỡ chữ tiêu đề */
+    letter-spacing: 0.5px;
+}
+
+.footer p {
+    color: #e6f0ff;
+    font-size: 0.8rem; /* Giảm cỡ chữ nội dung */
+    line-height: 1.4;
+}
+
+.footer .list-unstyled li a {
+    color: #e6f0ff;
+    font-size: 0.8rem; /* Giảm cỡ chữ liên kết */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer .list-unstyled li a:hover {
+    color: #ffffff;
+    transform: translateX(3px);
+    display: inline-block;
+}
+
+.footer .social-links .social-icon {
+    font-size: 1rem; /* Giảm cỡ biểu tượng mạng xã hội */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer .social-links .social-icon:hover {
+    transform: scale(1.1); /* Hiệu ứng phóng to nhẹ */
+    color: #e6f0ff;
+}
+
+.footer .bg-dark {
+    background-color: #003087 !important;
+    font-size: 0.75rem; /* Giảm cỡ chữ bản quyền */
+    padding: 0.5rem 0; /* Giảm padding bản quyền */
+}
+
+.footer .small {
+    font-size: 0.8rem; /* Đảm bảo chữ nhỏ hơn */
+}
+
+.footer .text-lg-end {
+    text-align: right; /* Căn phải cho mạng xã hội trên màn hình lớn */
+}

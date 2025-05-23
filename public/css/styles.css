@@ -1,0 +1,122 @@
+/* public/css/styles.css */
+.container {
+    max-width: 1200px;
+}
+
+.card {
+    border-radius: 8px; /* Giảm bo góc nhẹ */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #ffffff;
+    border: 1px solid #dee2e6; /* Thêm viền bên ngoài cho card */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 123, 255, 0.2); /* Giảm độ đậm của bóng */
+}
+
+.card-img-top {
+    overflow: hidden;
+}
+
+.img-fluid {
+    transition: transform 0.3s ease;
+    max-height: 180px; /* Giảm chiều cao hình ảnh */
+    object-fit: cover;
+}
+
+.card:hover .img-fluid {
+    transform: scale(1.05);
+}
+
+.card-header {
+    border-radius: 8px 8px 0 0; /* Điều chỉnh bo góc theo card */
+    background-color: #007bff; /* Xanh dương chủ đạo */
+    padding: 0.75rem 1.25rem; /* Giảm padding header */
+}
+
+.card-body {
+    padding: 1rem; /* Giảm padding body */
+}
+
+.card-title a {
+    color: #007bff;
+    font-weight: 600;
+    font-size: 1rem; /* Giảm cỡ chữ tiêu đề */
+}
+
+.card-title a:hover {
+    color: #0056b3; /* Xanh đậm hơn khi hover */
+    text-decoration: underline;
+}
+
+.card-text {
+    font-size: 0.85rem; /* Giảm cỡ chữ nội dung */
+    color: #495057;
+}
+
+.text-primary {
+    color: #007bff !important;
+}
+
+.placeholder-image {
+    border-radius: 8px 8px 0 0; /* Điều chỉnh bo góc */
+    background-color: #f1f5f9; /* Nền xám nhạt */
+    height: 180px; /* Giảm chiều cao placeholder */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-outline-primary {
+    color: #007bff;
+    border-color: #007bff;
+    font-size: 0.8rem; /* Giảm cỡ chữ nút */
+    padding: 0.25rem 0.75rem; /* Giảm padding nút */
+}
+
+.btn-outline-primary:hover {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.btn-outline-danger {
+    color: #dc3545;
+    border-color: #dc3545;
+    font-size: 0.8rem; /* Giảm cỡ chữ nút */
+    padding: 0.25rem 0.75rem; /* Giảm padding nút */
+}
+
+.btn-outline-danger:hover {
+    background-color: #dc3545;
+    color: #ffffff;
+}
+
+.btn-light {
+    background-color: #ffffff;
+    border-color: #007bff;
+    color: #007bff;
+    font-size: 0.8rem; /* Giảm cỡ chữ nút */
+    padding: 0.25rem 0.75rem; /* Giảm padding nút */
+}
+
+.btn-light:hover {
+    background-color: #e9ecef;
+    color: #0056b3;
+}
+
+.alert-info {
+    background-color: #cce5ff;
+    border-color: #b8daff;
+    color: #004085;
+}
+
+.hover-effect {
+    transition: all 0.3s ease;
+}
+
+.card-footer {
+    padding: 0.75rem; /* Giảm padding footer */
+    background-color: #ffffff;
+    border-top: none;
+}

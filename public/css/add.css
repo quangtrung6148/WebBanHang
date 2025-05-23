@@ -1,0 +1,86 @@
+/* public/css/styles.css */
+.container {
+    max-width: 600px;
+}
+
+.card {
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 123, 255, 0.2);
+}
+
+.card-header {
+    border-radius: 12px 12px 0 0;
+    background-color: #007bff;
+}
+
+.card-body {
+    padding: 1.5rem;
+    background-color: #ffffff;
+}
+
+.form-label {
+    color: #007bff;
+    font-weight: 500;
+}
+
+.form-control {
+    border-color: #ced4da;
+    border-radius: 6px;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.btn-outline-secondary {
+    color: #6c757d;
+    border-color: #6c757d;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #6c757d;
+    color: #ffffff;
+}
+
+.alert-danger {
+    border-color: #f8d7da;
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.alert-dismissible .close {
+    color: #721c24;
+}
+
+.custom-select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23333' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 8px 10px;
+}
+
+.text-danger {
+    color: #dc3545;
+}
+
+.invalid-feedback {
+    font-size: 0.875rem;
+}
