@@ -1,122 +1,187 @@
-/* public/css/styles.css */
+/* Layout */
 .container {
     max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
 }
 
+/* Card Styles */
 .card {
-    border-radius: 8px; /* Giảm bo góc nhẹ */
+    border-radius: 12px;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    background-color: #ffffff;
-    border: 1px solid #dee2e6; /* Thêm viền bên ngoài cho card */
 }
 
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0, 123, 255, 0.2); /* Giảm độ đậm của bóng */
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 123, 255, 0.15);
 }
 
+/* Image */
 .card-img-top {
     overflow: hidden;
 }
 
 .img-fluid {
-    transition: transform 0.3s ease;
-    max-height: 180px; /* Giảm chiều cao hình ảnh */
+    max-height: 180px;
+    width: 100%;
     object-fit: cover;
+    transition: transform 0.3s ease;
 }
 
 .card:hover .img-fluid {
     transform: scale(1.05);
 }
 
-.card-header {
-    border-radius: 8px 8px 0 0; /* Điều chỉnh bo góc theo card */
-    background-color: #007bff; /* Xanh dương chủ đạo */
-    padding: 0.75rem 1.25rem; /* Giảm padding header */
+/* Placeholder image */
+.placeholder-image {
+    background-color: #f0f2f5;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #adb5bd;
+    font-style: italic;
+    font-size: 0.9rem;
+    border-radius: 12px 12px 0 0;
 }
 
+/* Header */
+.card-header {
+    border-radius: 12px 12px 0 0;
+    background: linear-gradient(to right, #007bff, #0056b3);
+    color: #fff;
+    padding: 1rem 1.25rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+/* Body */
 .card-body {
-    padding: 1rem; /* Giảm padding body */
+    padding: 1rem;
 }
 
 .card-title a {
     color: #007bff;
+    font-size: 1rem;
     font-weight: 600;
-    font-size: 1rem; /* Giảm cỡ chữ tiêu đề */
+    text-decoration: none;
 }
 
 .card-title a:hover {
-    color: #0056b3; /* Xanh đậm hơn khi hover */
+    color: #0056b3;
     text-decoration: underline;
 }
 
 .card-text {
-    font-size: 0.85rem; /* Giảm cỡ chữ nội dung */
-    color: #495057;
+    font-size: 0.875rem;
+    color: #555;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+}
+
+/* Footer */
+.card-footer {
+    background-color: transparent;
+    border-top: none;
+    padding: 0.75rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+/* Buttons */
+.btn-sm {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.btn-outline-primary {
+    color: #007bff;
+    border: 1px solid #007bff;
+    background-color: transparent;
+}
+
+.btn-outline-primary:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.btn-outline-danger {
+    color: #dc3545;
+    border: 1px solid #dc3545;
+    background-color: transparent;
+}
+
+.btn-outline-danger:hover {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.btn-outline-success {
+    color: #28a745;
+    border: 1px solid #28a745;
+    background-color: transparent;
+}
+
+.btn-outline-success:hover {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.btn-light {
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+    color: #007bff;
+}
+
+.btn-light:hover {
+    background-color: #e2e6ea;
+    color: #0056b3;
+}
+
+/* Alert */
+.alert-info {
+    background-color: #e9f5ff;
+    border-left: 4px solid #007bff;
+    color: #004085;
+    padding: 1rem;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Utilities */
+.hover-effect {
+    transition: all 0.3s ease;
 }
 
 .text-primary {
     color: #007bff !important;
 }
 
-.placeholder-image {
-    border-radius: 8px 8px 0 0; /* Điều chỉnh bo góc */
-    background-color: #f1f5f9; /* Nền xám nhạt */
-    height: 180px; /* Giảm chiều cao placeholder */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.text-muted {
+    color: #6c757d !important;
+}
+/* Nút Thêm vào giỏ hàng */
+.btn-add-to-cart {
+    font-size: 0.8rem;
+    padding: 0.35rem 0.75rem;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #17a2b8; /* Màu xanh ngọc nhẹ nhàng */
+    border: none;
+    transition: background-color 0.3s ease;
 }
 
-.btn-outline-primary {
-    color: #007bff;
-    border-color: #007bff;
-    font-size: 0.8rem; /* Giảm cỡ chữ nút */
-    padding: 0.25rem 0.75rem; /* Giảm padding nút */
-}
-
-.btn-outline-primary:hover {
-    background-color: #007bff;
-    color: #ffffff;
-}
-
-.btn-outline-danger {
-    color: #dc3545;
-    border-color: #dc3545;
-    font-size: 0.8rem; /* Giảm cỡ chữ nút */
-    padding: 0.25rem 0.75rem; /* Giảm padding nút */
-}
-
-.btn-outline-danger:hover {
-    background-color: #dc3545;
-    color: #ffffff;
-}
-
-.btn-light {
-    background-color: #ffffff;
-    border-color: #007bff;
-    color: #007bff;
-    font-size: 0.8rem; /* Giảm cỡ chữ nút */
-    padding: 0.25rem 0.75rem; /* Giảm padding nút */
-}
-
-.btn-light:hover {
-    background-color: #e9ecef;
-    color: #0056b3;
-}
-
-.alert-info {
-    background-color: #cce5ff;
-    border-color: #b8daff;
-    color: #004085;
-}
-
-.hover-effect {
-    transition: all 0.3s ease;
-}
-
-.card-footer {
-    padding: 0.75rem; /* Giảm padding footer */
-    background-color: #ffffff;
-    border-top: none;
+.btn-add-to-cart:hover {
+    background-color: #138496; /* Tối hơn khi hover */
+    text-decoration: none;
+    color: #fff;
 }

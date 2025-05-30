@@ -48,7 +48,7 @@
                             <a href="/webbanhang/Product/addToCart/<?php echo
                                                                     $product->id; ?>"
                                 class="btn btn-success px-4">➕ Thêm vào giỏ hàng</a>
-                            <a href="/webbanhang/Product/list" class="btn btn￾secondary px-4 ml-2">Quay lại danh sách</a>
+                            <a href="/webbanhang/Product/index" class="btn btn￾secondary px-4 ml-2">Quay lại danh sách</a>
                         </div>
                     </div>
                 </div>

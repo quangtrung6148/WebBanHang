@@ -1,9 +1,10 @@
 <?php include __DIR__ . '/../shares/header.php'; ?>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
 <div class="container mt-5">
     <div class="card border-0 shadow-sm">
-        <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center" style="background-color: #007bff;">
-            <h1 class="h4 mb-0">Danh Sách Sản Phẩm Điện Tử</h1>
+        <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+            <h1 class="h4 mb-0">Danh Sách Sản Phẩm</h1>
             <a href="/webbanhang/Product/add" class="btn btn-light btn-sm text-primary">Thêm Sản Phẩm Mới</a>
         </div>
         <div class="card-body bg-white">
@@ -43,10 +44,13 @@
                                         <?php echo htmlspecialchars($product->category_name, ENT_QUOTES, 'UTF-8'); ?>
                                     </p>
                                 </div>
-                                <div class="card-footer bg-white border-0 d-flex justify-content-between">
+                                <div class="card-footer bg-white border-0 d-flex justify-content-between flex-wrap gap-1">
                                     <a href="/webbanhang/Product/edit/<?php echo $product->id; ?>" class="btn btn-outline-primary btn-sm">Sửa</a>
                                     <a href="/webbanhang/Product/delete/<?php echo $product->id; ?>" class="btn btn-outline-danger btn-sm"
                                         onclick="return confirm('Bạn có chắc chắn muốn xóa sản phẩm này?');">Xóa</a>
+                                    <a href="/webbanhang/Product/addToCart/<?php echo $product->id; ?>" class="btn btn-add-to-cart">🛒 Giỏ hàng</a>
+
+
                                 </div>
                             </div>
                         </div>
